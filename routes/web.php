@@ -16,3 +16,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('customer')->group(function () {
+    Route::get('index', function () {
+        return view('index');
+    });
+    Route::get('create', function () {
+
+    });
+    Route::post('store', function () {
+
+    });
+    Route::get('{id}/show', function () {
+
+    });
+    Route::get('{id}/edit', function () {
+
+    });
+    Route::patch('{id}/update', function () {
+
+    });
+    Route::delete('{id}/delete', function () {
+
+    });
+});
