@@ -18,9 +18,7 @@ Route::get('/', function () {
 });
 
 Route::prefix('customer')->group(function () {
-    Route::get('index', function () {
-        return view('index');
-    });
+    Route::get('index', 'CustomerController@getAll');
     Route::get('create', function () {
 
     });
