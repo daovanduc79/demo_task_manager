@@ -16,6 +16,12 @@ class CustomerController extends Controller
     public function getAll()
     {
         $customers = $this->customer->all();
-        return view('customer.list', compact('customers'));
+        return view('customers.list', compact('customers'));
     }
+
+    public function create()
+    {
+        return view('customers.create');
+    }
+
 }

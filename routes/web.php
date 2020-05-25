@@ -17,24 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::prefix('customer')->group(function () {
+Route::prefix('customers')->group(function () {
     Route::get('index', 'CustomerController@getAll');
-    Route::get('create', function () {
-
-    });
-    Route::post('store', function () {
-
-    });
-    Route::get('{id}/show', function () {
-
-    });
-    Route::get('{id}/edit', function () {
-
-    });
-    Route::patch('{id}/update', function () {
-
-    });
-    Route::delete('{id}/delete', function () {
-
-    });
+    Route::get('create', 'CustomerController@create');
 });
+
+

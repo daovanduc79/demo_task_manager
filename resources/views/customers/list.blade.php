@@ -1,12 +1,12 @@
 @extends('master')
 @section('content')
-
+    <div class="col-12">
         <div class="card">
             <div class="card-header">
                 <h4 style="color: red">List Manager</h4>
             </div>
             <div class="card-body">
-                <a class="btn btn-success btn-sm">Add new</a>
+                <a href="create" class="btn btn-success btn-sm">Add new</a>
                 <table class="table">
                     <thead class="thead-dark">
                     <tr>
@@ -38,7 +38,7 @@
                 </table>
             </div>
         </div>
-
+    </div>
 @endsection
 
 

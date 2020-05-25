@@ -27,7 +27,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="index">List</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -64,9 +64,9 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-12">
+
             @yield('content')
-        </div>
+
     </div>
 </div>
 
