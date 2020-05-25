@@ -46,9 +46,11 @@
         </div>
         <div class="navbar-nav mr-auto">
             <div class="btn-group">
+                @if(\Illuminate\Support\Facades\Auth::check())
                 <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    user
+                    {{auth()->user()->name}}
                 </button>
+                @endif
                 <div class="dropdown-menu dropdown-menu-right">
                     <a class="dropdown-item" href="{{route('users.list')}}">List</a>
                     <a class="dropdown-item" href="#">Another action</a>
