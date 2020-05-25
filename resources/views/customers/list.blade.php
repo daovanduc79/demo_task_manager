@@ -27,8 +27,8 @@
                             <td>{{$customer->birthday}}</td>
                             <td>{{$customer->email}}</td>
                             <td>
-                                <a class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#exampleModal{{$key}}">view</a>
-                                <div class="modal fade" id="exampleModal{{$key}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <a class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#exampleModal{{$customer->id}}">view</a>
+                                <div class="modal fade" id="exampleModal{{$customer->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
