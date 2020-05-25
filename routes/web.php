@@ -18,8 +18,13 @@ Route::get('/', function () {
 });
 
 Route::prefix('customers')->group(function () {
-    Route::get('index', 'CustomerController@getAll');
-    Route::get('create', 'CustomerController@create');
+    Route::get('/index', 'CustomerController@getAll');
+    Route::get('/create', 'CustomerController@create');
+
+});
+
+Route::prefix('users')->group(function () {
+    Route::get('/login', 'LoginController@showFormLogin');
 });
 
 

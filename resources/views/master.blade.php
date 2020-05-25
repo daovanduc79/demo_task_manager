@@ -64,11 +64,10 @@
 
 <div class="container">
     <div class="row">
-
             @yield('content')
-
     </div>
 </div>
+@yield('view')
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

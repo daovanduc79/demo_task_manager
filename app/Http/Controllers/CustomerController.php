@@ -23,5 +23,4 @@ class CustomerController extends Controller
     {
         return view('customers.create');
     }
-
 }
