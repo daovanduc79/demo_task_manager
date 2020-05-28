@@ -14,7 +14,7 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
-        $username = $request->username;
+        $username = $request->email;
         $password = $request->password;
 
         $user = [
@@ -23,7 +23,7 @@ class LoginController extends Controller
         ];
 
         if (Auth::attempt($user)) {
-            return redirect()->route('customers.list');
+            return redirect()->route('home');
         } else {
             return back();
         }
