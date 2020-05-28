@@ -10,8 +10,13 @@
             <div class="modal-body">
                 <table class="table">
                     <tr>
-                        <th scope="row">ID :</th>
-                        <td>{{$customer->id}}</td>
+                        <td colspan="2" align="center">
+                            <img src="{{asset('storage/'.$customer->image)}}" style="width: 100px; height: 150px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">MKH :</th>
+                        <td>{{$customer->customer_number}}</td>
                     </tr>
                     <tr>
                         <th scope="row">Name :</th>
